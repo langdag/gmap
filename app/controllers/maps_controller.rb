@@ -1,7 +1,7 @@
 class MapsController < ApplicationController
 
 
-  def create
+  def index
 	@store = Store.first
     #@event.lat, @event.lon = lat_lon(@event.full_address)
   end 
@@ -33,7 +33,9 @@ class MapsController < ApplicationController
     # Extract the latitude and longitude and return them
     lat = result['results'][0]['geometry']['location']['lat']
     lon = result['results'][0]['geometry']['location']['lng']
-    return lat, lon
+    @store.lat = lat
+    @store.lng = lon
+    @store.save
   end
 
 end

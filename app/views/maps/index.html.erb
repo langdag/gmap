@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+ 
   </head>
   <body>
     <h3>Google Maps</h3>
-    <div id="map"></div>
+    <div id="map" data-lat="<%= @store.lat %>" data-lon="<%= @store.lng %>">
+
+    <!--<p><%= @store.lat %></p>
+	<p><%= @store.lng %></p>
+	-->
+    </div>
 
   </body>
 </html>
