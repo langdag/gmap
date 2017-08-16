@@ -5,8 +5,8 @@ class CreateStores < ActiveRecord::Migration[5.1]
       t.column :name, :string, :limit => 50
       t.column :address, :string, :limit => 100
       t.column :city, :string, :limit => 50 
-      t.column :lat, :string, :limit => 20
-      t.column :lng, :string, :limit => 20
+      t.column :lat, :float, :limit => 20
+      t.column :lng, :float, :limit => 20
       t.timestamps
     end
   end

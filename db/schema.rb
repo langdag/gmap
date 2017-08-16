@@ -17,8 +17,8 @@ ActiveRecord::Schema.define(version: 20170814174222) do
     t.string "name", limit: 50
     t.string "address", limit: 100
     t.string "city", limit: 50
-    t.string "lat", limit: 20
-    t.string "lng", limit: 20
+    t.float "lat", limit: 20
+    t.float "lng", limit: 20
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
