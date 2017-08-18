@@ -11,9 +11,6 @@
      //   });
      // }
 
-  //$(window).on('load',function(){
-      //var lat = $('#map').data('lat');
-      //var lon = $('#map').data('lon');
     function initMap() {
       var lat = $('#map').data('lat');
       var lon = $('#map').data('lon');
@@ -28,7 +25,7 @@
         map: map
       });
  
- // google.maps.event.addDomListener(window, 'load', initializer (<%= @store.lat %>, <%= @store.lng %>));
+ 
 
     };
 

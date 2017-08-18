@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'pry'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
+gem 'geocoder'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
